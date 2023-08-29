@@ -1,6 +1,3 @@
-/* global config csv2geojson turf Assembly $ */
-'use strict';
-
 mapboxgl.accessToken = config.accessToken;
 const columnHeaders = config.sideBarInfo;
 
@@ -31,7 +28,7 @@ function createPopup(currentFeature) {
   if (popups[0]) popups[0].remove();
   new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat(currentFeature.geometry.coordinates)
-    .setHTML('<h3>' + currentFeature.properties[config.popupInfo] + '</h3>')
+    .setHTML('<h4>' + currentFeature.properties[config.popupInfo] + '</h4>')
     .addTo(map);
 }
 
@@ -106,7 +103,7 @@ function buildLocationList(locationData) {
 function buildDropDownList(title, listItems) {
   const filtersDiv = document.getElementById('filters');
   const mainDiv = document.createElement('div');
-  const filterTitle = document.createElement('h3');
+  const filterTitle = document.createElement('h4');
   filterTitle.innerText = title;
   filterTitle.classList.add('py12', 'txt-bold');
   mainDiv.appendChild(filterTitle);
