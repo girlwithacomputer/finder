@@ -1,16 +1,72 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 145%;
+}
+
 #sidebarA{
     color: white;
 }
 
+/*
+.viewport-twothirds {
+    height: auto!important;
+    
+}
+*/
+
+
 #filterResults{
-    font-size: 12px;
-    color: white;
-    background-color: #448EE4;
+    color: black;
+    background-color: white;
+    border: solid #000000 1px;
+    vertical-align: middle;
+    font-family: 'Della Respira', serif;
+    padding: .2rem .8rem .4rem .8rem; /* top, right,bottom, left  */
 
 }
 
+
+h6 {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8rem;
+    line-height: 100%;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+h3 {
+    font-family: 'Della Respira', serif;
+    line-height: 140%;
+    margin-top: 1rem;
+    color: #000000;
+    font-size: 1.953rem;
+}
+
+
+
+
+
+p {
+    color: #000000;
+    
+}
+
+.py12 {
+    padding-top: 0px!important;
+    padding-bottom: 1.5rem!important;
+}
+
+
+
+
+
 .theme{
-    background-color: #2A395F;
+    background-color: #E2D8CC24;
+    border: solid #000000 1px;
+    
 }
 
 .select{
@@ -27,7 +83,7 @@
     font-size: 14px;
     word-wrap: break-word;
     text-decoration: none;
-    border-bottom: solid rgb(34, 33, 33, .3) 1px;
+    border-bottom: solid #000000 1px;
 }
 
 .listings .item:last-child {
@@ -48,16 +104,17 @@
     width: 3px;
     height: 3px;
     border-left: 0;
-    background: rgba(0, 0, 0, 0.1);
+    
 }
 
 ::-webkit-scrollbar-track {
-    background: none;
+   
+    background: #00000010;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 0;
-    background: #2A395F;
+    background: #e85ca9;
 }
 
 
@@ -74,7 +131,7 @@
 }
 
 .mapboxgl-popup-content {
-    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    font: 400 15px/22px 'Open Sans', 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
     text-align: center;
     padding: 5;
     width: 180px;
@@ -93,4 +150,3 @@
   }
 
 
-  
